@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>A Message for Emmanuella</title>
+  </head>
+  <body>
+    <div id="container">
+      <h1>For My Love, Emmanuella</h1>
+      <div id="scene">
+        <img
+          src="images/istockphoto-502885152-170667a.webp"
+          alt="Heart"
+          id="heart"
+          onclick="animateHeart(); shakeElement('heart')"
+        />
+        <img
+          src="images/photo-1589952283406-b53a7d1347e8.avif"
+          alt="Bunny"
+          id="bunny"
+          onclick="showMessage('You\'re my sweet bunny!'); shakeElement('bunny')"
+        />
+        <img
+          src="images/istockphoto-1370630918-170667a.webp"
+          alt="Flower"
+          id="flower"
+          onclick="showMessage('You\'re as beautiful as this flower!'); shakeElement('flower')"
+        />
+        <img
+          src="images/photo-1582176604856-e824b4736522.avif"
+          alt="Chocolate"
+          id="chocolate"
+          onclick="showMessage('You\'re sweeter than chocolate!'); shakeElement('chocolate')"
+        />
+      </div>
+      <div
+        id="message-box"
+        onclick="changeColor(); bounceElement('message-box')"
+      >
+        <p id="message">Click on the icons to reveal sweet messages!</p>
+        <p id="love-note">
+          I love you more than words can express. You make my world brighter
+          every day.
+        </p>
+      </div>
+    </div>
+    <audio id="background-music" loop>
+      <source src="music/background_music.mp3" type="audio/mpeg" />
+      Your browser does not support the audio tag.
+    </audio>
+    <script src="script.js"></script>
+  </body>
+</html>

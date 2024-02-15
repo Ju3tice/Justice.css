@@ -1,0 +1,93 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #ffcccc;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#container {
+    text-align: center;
+    position: relative;
+}
+
+h1 {
+    color: #cc0066;
+}
+
+#scene {
+    position: relative;
+    animation: float 2s infinite alternate ease-in-out;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.2);
+}
+
+#message-box {
+    margin-top: 20px;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-color 0.5s ease-in-out;
+}
+
+#message {
+    color: #cc0066;
+}
+
+#love-note {
+    color: #cc0066;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+.shake {
+    animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25%, 75% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+}
+
+.bounce {
+    animation: bounce 1s infinite alternate ease-in-out;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-5px);
+    }
+}
